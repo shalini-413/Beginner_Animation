@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 430px;
+    left: 1320px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px greenyellow;
+  }
+  
+  .btn.clicked {
+    background-color: red;
+    color: white;
+    box-shadow: 3px 3px 3px 3px orange;
+  }
+  
+  .sky {
+    height: 150vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: shakeSky linear 8s infinite;
+    animation-play-state: paused;
+  }
+  
+  .trees {
+    height: 100vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-size: cover;
+    position: absolute;
+    top: -144px;
+    animation: shakeTrees linear 4s infinite;
+    animation-play-state: paused;
+  }
+  
+  .track {
+    height: 110vh;
+    width: 800vw;
+    background-image: url(track.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 72vh;
+    animation: busMove linear 13s infinite;
+    animation-play-state: paused;
+  }
+  
+  .bus {
+    height: 250px;
+    width: 240px;
+    background-image: url(bus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 600px;
+    bottom: -30vh;
+    animation: shake linear 0.3s infinite;
+    animation-play-state: paused;
+  }
+  
+  .wheel1 img {
+    width: 69px;
+    position: relative;
+    top: 142px;
+    left: 21px;
+    animation: wheelRotation linear 0.16s infinite;
+    animation-play-state: paused;
+  }
+  
+  .wheel2 img {
+    width: 75px;
+    position: relative;
+    top: 65px;
+    left: 171px;
+    animation: wheelRotation linear 0.16s infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes shakeSky {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shakeTrees {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes busMove {
+    100% {
+      transform: translateX(-500vw);
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes wheelRotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.text1{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    color: beige;
+    font-family:cursive;
+    text-shadow: 2px 2px yellowgreen;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: beige;
+    font-family:cursive;
+    font-size: 20px;
+    text-decoration: underline;
+    text-shadow: 2px 2px palevioletred;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
